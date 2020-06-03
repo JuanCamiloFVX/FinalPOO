@@ -1,0 +1,37 @@
+1: El boton generar no tenia asignada ninguna funcion por lo tanto no
+Generaba los numeros.
+2: El la funcion para generar numeros Ramdom estaba en en el textBox2 por lo
+cual no funcionaba.
+3: En el boton suma el Eventlistener estaba mas intanciodo button3_MouseClick y debe ser button3_Click.
+4: Tambien lo que estaba en codigo para sumar lo que hacia era multiplicar los valores.
+
+(Suma *= numeros[i]) debe ser (Suma += numeros[i])
+
+5: En la generacion de Ramdom se debe instanciar el inicio y el fin es decir
+denonde se toman los numeros ramdom
+
+ numeros[i] = rand.Next(); este no pone limites para tomar los numeros.
+
+ numeros[i] = rand.Next(1,10); este si lo hace.
+
+6: Botton1 no tiene nada de codigo necesario pra hallar la mediana
+
+
+	//Esto Halla la mediada
+ {
+            if (cantidad % 2 == 0 )
+            {
+                mediana = numeros[(cantidad / 2)];
+                mediana1 = numeros[(cantidad / 2)-1];
+                textBox3.Text = mediana1.ToString()+" "+mediana.ToString();
+                mediana = 0;
+
+
+            }
+            else{
+                mediana = numeros[(cantidad / 2)];
+                textBox3.Text = mediana.ToString();
+                mediana = 0;
+
+            }
+    }
